@@ -1,7 +1,93 @@
+:root {
+    --primary: #C70039;
+    --secondary: #111D5E;
+    --light: #F8F8F8;
+    --darker: #7e7e7e;
+}
+
 * {
     box-sizing: border-box;
 }
 
+
 html {
     font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    height: 120px;
+    padding: 0 45px;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .subMenu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+nav .subMenu ul li {
+    font-size: .9rem;
+    margin-right: 20px;
+}
+
+nav .fas {
+    font-size: 30px;
+}
+
+nav .Logo {
+    color: var(--light);
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav .searchBoxContainer {
+    display: flex;
+    align-items: center;
+    width: 920px;
+    border: 1px solid rgba(1, 1, 1, 0);
+    padding: 0 20px;
+    border-radius: 22px;
+    background-color: white
+}
+
+nav .searchBoxContainer .fas {
+    cursor: pointer;
+    color: var(--primary);
+}
+
+nav .searchBox {
+    width: 95%;
+    font-size: 1.2rem;
+    padding: 12px;
+    border: none;
+    margin-right: 10px;
+}
+
+
+nav .searchBox:focus {
+    outline: none;
+}
+
+nav a {
+    color: var(--light);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--secondary);
 }
