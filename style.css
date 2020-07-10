@@ -33,6 +33,52 @@ nav {
     justify-content: space-between;
 }
 
+.carouselarea{
+  display: flex;
+  justify-content:center;
+  padding: 0 10%;
+  background-color: var(--secondary);
+}
+.selector{
+  color: var(--light);
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.circle {
+     width: 50px;
+     height: 50px;
+     background: var(--light);
+     border-radius: 50%
+}
+
+.slogan{
+  position: absolute;
+  display: inline-block;
+  font-size: 3rem;
+  left: 12%;
+  top: 25%;
+  width: 400px;
+  color: var(--primary);
+}
+.red{
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 1;
+  width: 75%;
+  height: 80px;
+  top: 385px;
+  background: var(--primary);
+}
+img{
+  height: 300px;
+  width: 40%;
+  object-fit: cover;
+}
+
 nav .subMenu ul {
     display: flex;
     justify-content: center;
@@ -53,6 +99,11 @@ nav .Logo {
     color: var(--light);
     margin: 0;
     font-size: 2rem;
+}
+
+.red .fas{
+  font-size: 3rem;
+  color: var(--light);
 }
 
 nav .searchBoxContainer {
