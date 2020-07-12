@@ -21,6 +21,10 @@ body {
     margin: 0;
 }
 
+body a {
+    cursor: pointer;
+}
+
 /* Navigation */
 nav {
     height: 120px;
@@ -62,7 +66,7 @@ nav .Logo {
 
 nav a {
     color: var(--light);
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 nav a:hover {
@@ -107,8 +111,9 @@ nav .searchBoxContainer .fas {
     left: 0;
     height: 100vh;
     width: 25%;
-    text-align: center;
     transition: .5s transform;
+    text-align: center;
+    padding: 30px;
 }
 
 .sidebar.open {
@@ -133,6 +138,22 @@ nav .searchBoxContainer .fas {
     display: block;
     /* background-color: rgba(0, 0, 0, 0.493); */
 }
+
+/* Sidebar Links */
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+    text-align: start;
+}
+
+.sidebar-link {
+    margin-bottom: 20px;
+}
+
+.sidebar-links .sidebar-link a:hover {
+    color: var(--secondary);
+}
+
 
 /* Carousel Area */
 .carouselarea {
