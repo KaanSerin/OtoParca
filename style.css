@@ -98,6 +98,41 @@ nav .searchBoxContainer .fas {
     color: var(--primary);
 }
 
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 25%;
+    text-align: center;
+    transition: .5s transform;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar.closed {
+    transform: translateX(-100%);
+}
+
+.close-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 40;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.close-area.visible {
+    display: block;
+    /* background-color: rgba(0, 0, 0, 0.493); */
+}
 
 /* Carousel Area */
 .carouselarea {
