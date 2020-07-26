@@ -104,15 +104,34 @@ nav .searchBoxContainer .fas {
 .sidebar {
     position: fixed;
     z-index: 100;
-    background-color: white;
+    background-color: var(--light);
     top: 0;
     left: 0;
     height: 100vh;
     width: 25%;
     transition: .5s transform;
     text-align: center;
-    padding: 30px;
+    padding: 30px 25px;
+    overflow-y: scroll;
 }
+
+/* Custom scrollbar start */
+.sidebar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: var(--primary);
+}
+
+/* Custom scrollbar end */
 
 .sidebar.open {
     transform: translateX(0);
@@ -120,6 +139,18 @@ nav .searchBoxContainer .fas {
 
 .sidebar.closed {
     transform: translateX(-100%);
+}
+
+.sidebar a {
+    color: rgb(68, 68,
+            68);
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: rgb(224, 224, 224);
 }
 
 .close-area {
@@ -140,11 +171,23 @@ nav .searchBoxContainer .fas {
 .sidebar-links {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
     text-align: start;
 }
 
 .sidebar-link {
     margin-bottom: 20px;
+}
+
+.sidebar-link .fas {
+    font-size: 1.4rem;
+    margin-right: 20px;
+}
+
+.sidebar-link img {
+    width: 12%;
+    margin-right: 20px;
+    height: auto;
 }
 
 .sidebar-links .sidebar-link a:hover {
@@ -215,7 +258,7 @@ img {
     margin: auto;
 }
 
-.item-area-extra{
+.item-area-extra {
     width: 80%;
     margin: auto;
     border-top: 1px solid var(--secondary);
@@ -230,13 +273,13 @@ img {
 .item-area .title {
     text-decoration-color: var(--primary) !important;
     text-decoration: underline;
-      padding-top: 20px;
+    padding-top: 20px;
 }
 
-.categories{
-  display: inline-block;
-  text-align: center;
-    position:relative;
+.categories {
+    display: inline-block;
+    text-align: center;
+    position: relative;
     top: 19px;
     left: 42%;
     padding: 0 20px;
