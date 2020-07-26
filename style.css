@@ -88,7 +88,7 @@ nav .searchBox:focus {
 nav .searchBoxContainer {
     display: flex;
     align-items: center;
-    width: 920px;
+    width: 80%;
     border: 1px solid rgba(1, 1, 1, 0);
     padding: 0 20px;
     border-radius: 22px;
@@ -185,7 +185,7 @@ nav .searchBoxContainer .fas {
 }
 
 .sidebar-link img {
-    width: 12%;
+    width: 32px;
     margin-right: 20px;
     height: auto;
 }
